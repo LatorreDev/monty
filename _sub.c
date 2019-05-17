@@ -1,4 +1,4 @@
-#include "lifo_fifo.h"
+#include "monty.h"
 /**
  *_sub - Substract two elements of the stack and combine nodes
  *@stack: List with the stack
