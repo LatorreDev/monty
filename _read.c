@@ -28,6 +28,7 @@ void read_file(char *mystring, stack_t **stack)
 			verifier(arguments, stack, count);
 			_free_doub(arguments);
 		}
+		free(line);
 		fclose(file);
 	}
 	else
