@@ -1,4 +1,4 @@
-#include "lifo_fifo.h"
+#include "monty.h"
 /**
  *Swap - function that swaps the values in the list
  *@stack: pointer to the stack
