@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- *Swap - function that swaps the values in the list
+ *swap - function that swaps the values in the list
  *@stack: pointer to the stack
  *@line_number: the number of lines that recives
  *Return: void
@@ -13,7 +13,6 @@ void swap(stack_t **stack, unsigned int line_number)
 	int len;
 
 	len = len_stack(stack);
-	
 	if (len < 2)
 	{
 		fprintf(stderr, "can't swap, stack too short %u\n", line_number);
@@ -31,16 +30,16 @@ void swap(stack_t **stack, unsigned int line_number)
  */
 int len_stack(stack_t **stack)
 {
-        stack_t *counter;
-        int size = 0; 
+	stack_t *counter;
+	int size = 0;
+	counter = *stack;
 
-        counter = *stack;
-        while (counter != NULL)
-        {
-                counter = counter->next;
-                size++;
-        }
+	while (counter != NULL)
+	{
+		counter = counter->next;
+		size++;
+	}
 
-        return (size);
+	return (size);
 
 }
