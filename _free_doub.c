@@ -7,9 +7,6 @@
  */
 void _free_doub(char **args)
 {
-	int i, j;
-
-	(void)j;
-	(void)i;
+	free(args[0]);
 	free(args);
 }
