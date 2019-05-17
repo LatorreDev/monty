@@ -1,4 +1,4 @@
-#include "lifo_fifo.h"
+#include "monty.h"
 /**
  *_pint - print the top of the stack
  *@stack: pointer to the stack
@@ -15,6 +15,5 @@ void _pint(stack_t **stack, unsigned int line_number)
 		printf("L%d: can't pint, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-
 	printf("%d\n", head->n);
 }
